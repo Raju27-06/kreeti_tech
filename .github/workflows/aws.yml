@@ -29,12 +29,6 @@ name: Deploy to Amazon ECS
 on:
   push:
     branches: [ "main" ]
-
-env:
-  AWS_REGION: ap-south-1                 # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: kreeti_tech1          # set this to your Amazon ECR repository name
-  CONTAINER_NAME: app          # containerDefinitions section of your task definition
-
 permissions:
   contents: read
 
